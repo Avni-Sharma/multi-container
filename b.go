@@ -9,7 +9,7 @@ import (
 )
 
 func secHandler(w http.ResponseWriter, r *http.Request) {
-	res, err := http.Get("http://127.0.0.1:80/c")
+	res, err := http.Get("http://127.0.0.1:8333/c")
 	if err != nil {
 		log.Fatal("Error from client get", err)
 	}
@@ -32,3 +32,4 @@ func main() {
 
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
 }
+
