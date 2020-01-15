@@ -9,8 +9,7 @@ import (
 )
 
 func envHandler(w http.ResponseWriter, r *http.Request) {
-	res, err := http.Get("http://127.0.0.1:80/b")
-	//res, err := http.Get("http://127.0.0.1:80/sayhello")
+	res, err := http.Get("http://127.0.0.1:8222/b")
 	if err != nil {
 		log.Fatal("Error from client get", err)
 	}
